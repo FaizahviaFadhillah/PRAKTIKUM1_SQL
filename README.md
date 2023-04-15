@@ -9,6 +9,7 @@ CREATE DATABASE latihan2;
 ``` 
 
 Contoh Dan Hasilnya:
+
 ![img.1](gambar/img%201.png)
 
 # 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan2!
@@ -16,6 +17,7 @@ Contoh Dan Hasilnya:
 * sebelum membuat sebuah tabel, pastikan dahulu kita sudah menggunakan perintah `USE latihan2;` untuk masuk kedalam database.
 
 contoh Dan Hasilnya: 
+
 ![img.2](gambar/img%202.png)
 
 * Selanjutnya membuat tabel dengan nama biodata (nama, alamat)
@@ -27,6 +29,7 @@ CREATE TABLE biodata (
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.3](gambar/img%203.png)
 
 # 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
@@ -35,6 +38,7 @@ ALTER TABLE biodata ADD keterangan VARCHAR(15);
 ```
 
 Contoh Dan Hasilnya: 
+
 ![img.4](gambar/img%204.png)
 
 # 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
@@ -44,6 +48,7 @@ ALTER TABLE biodata ADD id INT(11) FIRST;
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.5](gambar/img%205.png)
 
 # 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
@@ -53,6 +58,7 @@ ALTER TABLE biodata ADD phone VARCHAR(15) AFTER alamat;
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.6](gambar/img%206.png)
 
 # 6. Ubah tipe data kolom id menjadi char(11)!
@@ -62,6 +68,7 @@ ALTER TABLE biodata MODIFY id CHAR(11);
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.7](gambar/img%207.png)
 
 # 7. Ubah nama kolom phone menjadi hp (varchar 20)!
@@ -71,6 +78,7 @@ ALTER TABLE biodata CHANGE phone hp VARCHAR(20);
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.8](gambar/img%208.png)
 
 # 8. Tambahkan kolom email setelah kolom hp!
@@ -80,6 +88,7 @@ ALTER TABLE biodata ADD email VARCHAR(50) AFTER hp;
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.9](gambar/img%209.png)
 
 # 9. Hapus kolom keterangan dari tabel!
@@ -89,6 +98,7 @@ ALTER TABLE biodata DROP keterangan;
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.10](gambar/img%2010.png)
 
 # 10. Ganti nama tabel menjadi data_mahasiswa!
@@ -98,6 +108,7 @@ RENAME TABLE biodata TO data_mahasiswa;
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.11](gambar/img%2011.png)
 
 # 11. Ganti nama field id menjadi nim
@@ -106,6 +117,7 @@ ALTER TABLE data_mahasiswa CHANGE id nim CHAR(11);
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.12](gambar/img%2012.png)
 
 # 12. Jadikan nim sebagai PRIMARY KEY
@@ -115,6 +127,7 @@ ALTER TABLE data_mahasiswa ADD PRIMARY KEY (nim);
 ``` 
 
 Contoh Dan Hasilnya:
+
 ![img.13](gambar/img%2013.png)
 
 # 13. Jadikan kolom email sebagai UNIQUE KEY
@@ -123,6 +136,7 @@ ALTER TABLE data_mahasiswa ADD UNIQUE (email);
 ```
 
 Contoh Dan Hasilnya:
+
 ![img.14](gambar/img%2014.png)
 
 ## EVALUSI 
@@ -131,57 +145,79 @@ Contoh Dan Hasilnya:
 
 1. Membuat Database
 `CREATE DATABASE latihan1;`
+
 Contoh Dan Hasilnya:
+
 ![img.15](gambar/img%2015.png)
 
 2. Membuat Table
 `CREATE TABLE siswa (nama VARCHAR(100), alamat TEXT);`
+
 Contoh Dan Hasilnya:
+
 ![img.16](gambar/img%2016.png)
 
 3. Menambah Kolom
 `ALTER TABLE siswa ADD COLUMN keterangan TEXT AFTER alamat;`
+
 Contoh Dan Hasilnya:
+
 ![img.17](gambar/img%2017.png)
 
 4. Menambah kolom diawal
 `ALTER TABLE siswa ADD COLUMN id INT FIRST;`
+
 Contoh dan Hasilnya:
+
 ![img.18](gambar/img%2018.png)
 
 5. Mengubah nama kolom
 `ALTER TABLE siswa CHANGE keterangan kelas VARCHAR(20);`
+
 Contoh dan Hasilnya:
+
 ![img.19](gambar/img%2019.png)
 
 6. Mengubah tipe data
 `ALTER TABLE siswa MODIFY COLUMN kelas VARCHAR(20);`
+
 Contoh Dan Hasilnya:
+
 ![img.20](gambar/img%2019.png)
 
 7. Menghapus kolom
 `ALTER TABLE siswa DROP COLUMN kelas;`
+
 Contoh Dan Hasilnya:
+
 ![img.21](gambar/img%2020.png)
 
 8. Menambah PRIMAY KEY id
 `ALTER TABLE siswa ADD PRIMARY KEY(id);`
+
 Contoh Dan Hasilnya:
+
 ![img.22](gambar/img%2022.png)
 
 9. Menghapus Primary Key
 `ALTER TABLE siswa DROP PRIMARY KEY;`
+
 Contoh Dan Hasilnya:
+
 ![img.23](gambar/img%2023.png)
 
 10. Menambahkan Constraint
 `ALTER TABLE siswa ADD CONSTRAINT PK_siswa PRIMARY KEY(id);`
+
 Contoh Dan Hasilnya:
+
 ![img.24](gambar/img%2024.png)
 
 11. Menghapus Constraint Primary Key juga Bisa Seperti Ini:
 `ALTER TABLE siswa DROP PRIMARY KEY;`
+
 Contoh Dan Hasilnya:
+
 ![img.25](gambar/img%2025.png)
 
 # Apa Maksud Dari int(11)?
